@@ -30,7 +30,7 @@
 9. Recibirá un token de esta manera `{"message":"Usuario autenticado","token":"eyJhbGciOiJIUzI1NiIsInR5c..."}`
 10. Copie el token y reemplacelo por la varToken de este código: `?accessToken=varToken`
 11. Si quiere usar el POST, DELETE o PUT, es de la siguiente forma:
-    - `POST http://localhost:9000/api/books?accessToken=varToken`
+    - `POST http://localhost:9000/api/books/id?accessToken=varToken`
     - `PUT http://localhost:9000/api/books/id?accessToken=varToken`
     - `DELETE http://localhost:9000/api/books/id?accessToken=varToken`
 
