@@ -1,0 +1,39 @@
+###
+POST http://localhost:9000/api/books?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDk3NjEwNjgsImV4cCI6MTcwOTc2MjI2OH0.njIL6n_40OPaSw7aP2SBCQNGzYmqS004c3b8kPl_s20 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "asi hablo zaratrusta",
+    "author": "Friedrich Nietzsche",
+    "published": 1892,
+    "state": false
+}
+
+###
+GET http://localhost:9000/api/books HTTP/1.1
+
+###
+GET http://localhost:9000/api/books/ HTTP/1.1
+
+###
+PUT http://localhost:9000/api/books/65e8a33f576a63f568161097 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Así Habló Zaratrusta",
+    "author": "Friedrich Nietzsche",
+    "published": 1898,
+    "state": true
+}
+
+###
+DELETE http://localhost:9000/api/books/65e8a33f576a63f568161097 HTTP/1.1
+
+###
+POST http://localhost:9000/auth/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "seba22s@gmail.com",
+    "password": "entrevista123"
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz de Libros</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interfaz de Libros</h1>
+        <div id="books"></div> 
+        <form id="bookForm">
+            <input type="text" id="titleInput" placeholder="Título del libro" required>
+            <input type="text" id="authorInput" placeholder="Autor del libro" required>
+            <input type="number" id="publishedInput" placeholder="Año de publicación" required>
+            <select id="stateInput">
+                <option value="true">Disponible</option>
+                <option value="false">Reservado</option>
+            </select>
+            <button type="submit">Agregar Libro</button>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script> 
+</body>
+</html>
